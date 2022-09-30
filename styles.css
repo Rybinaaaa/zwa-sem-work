@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+.container {
+    padding: 0 25px;
+}
+
+/*header*/
+
+.header {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
+}
+
+.header__main-text {
+    font-size: 60px;
+}
+
+/*main*/
+
+/*.main {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
+/*    grid-gap: 1px;*/
+/*    margin-top: 25px;*/
+/*}*/
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 400px;
+    overflow: scroll;
+    box-shadow: inset 0 -8px 5px rgba(128, 128, 128, 0.11);;
+
+}
+
+.list__el {
+    display: block;
+
+    /*max-width: 160px;*/
+    height: 100px;
+    padding: 20px;
+    width: 70%;
+
+    position: relative;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: space-between;
+    align-items: center;
+
+    border: solid 1px rgba(167, 167, 167, 0.24);
+    cursor: pointer;
+    border-radius: 2px;
+
+    transition: top, box-shadow .2s;
+}
+
+/*.main__box__options:after {*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    top: 0;*/
+
+/*    content: '\2807';*/
+/*    font-size: 20px;*/
+/*    color: rgba(0, 0, 0, 0.47);*/
+
+/*    transition: color .2s;*/
+/*}*/
+
+/*.main__box__options:hover::after{*/
+/*    color: rgba(0, 0, 0, 0.82);*/
+/*}*/
+
+.list__el:hover {
+    position: relative;
+    top: -2px;
+
+    -webkit-box-shadow: 14px 5px 33px 0px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 14px 5px 33px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: 14px 5px 33px 0px rgba(0, 0, 0, 0.13);
+}
+
+/*.main__box__description {*/
+/*    color: rgba(0, 0, 0, 0.47);*/
+/*}*/
+
+.main__add {
+    background: rgba(238, 70, 48, 0.84);
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.main__add:hover {
+    transition: all .2s;
+
+    width: 70px;
+    height: 70px;
+}
